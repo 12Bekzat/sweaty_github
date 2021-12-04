@@ -1,0 +1,823 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-color: rgb(43 43 43);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    background-color: #2f2e2e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.container {
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-col {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo {
+    letter-spacing: 0.05em;
+    font-size: 21px;
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.navigation {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    color: #FFFFFF;
+    width: 33.3%;
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.log-in {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-left: 10px;
+}
+
+.link:hover {
+    color: #D5D5D5;
+    transition: .5s;
+}
+
+.authorize {
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.authorize:hover .log-in {
+    transition: .5s;
+    color: #bbbbbb;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 96px 0 49px 0;
+}
+
+.main-title {
+    font-family: montserrat, sans-serif;
+    font-size: 68px;
+    color: white;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    width: 50%;
+    animation-name: left-move;
+    animation: left-move 1s ease-in 1 forwards;
+}
+
+.main-text {
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    padding-bottom: 40px;
+    animation: left-move 1s ease-in 1 forwards;
+}
+
+.line {
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.info-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block {
+    display: flex;
+    background-color: rgb(85 85 85);
+    margin: 35px;
+}
+
+.info {
+    margin: 42px 65px 21px;
+    color: white;
+}
+
+.info-text {
+    font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 16px;
+}
+
+.button-left {
+    text-decoration: none;
+    background-color: #2B2B2B;
+    color: white;
+    letter-spacing: 0.1em;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: normal;
+    padding: 8px 65px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.button-left:hover {
+    transition: .5s;
+    background-color: #fff;
+    color: black;
+}
+
+.add {
+    font-size: 30px;
+    color: white;
+    margin: 0 25px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.add-user {
+    font-size: 20px;
+    color: white;
+}
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.select-user {
+    padding: 10px 20px;
+    background-color: #2B2B2B;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid #957b5f;
+}
+
+.button {
+    text-decoration: none;
+    background-color: white;
+    letter-spacing: 0.1em;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+    padding: 8px 65px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.button:hover {
+    transition: .5s;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.service-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0 41px 41px;
+    font-family: avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
+    margin: 0 15px;
+}
+
+.icon {
+    margin: 79px 0 10px;
+    font-size: 123px;
+    transition: 1s;
+}
+
+.service-text {
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: #D5D5D5;
+    border: 1px solid black;
+    padding: 16px 56px;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+.service-title {
+    font-size: 22px;
+    transition: 1s;
+}
+
+.extra-text {
+    font-weight: 100;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.service-block:hover .icon {
+    transition: .5s;
+    font-size: 95px;
+    margin-top: 60px;
+}
+
+.service-block:hover .extra-text {
+    transition: .5s;
+    padding: 0 70px;
+}
+
+.service-link {
+    color: black;
+    display: none;
+    font-weight: 100;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.service-link:hover {
+    font-weight: 700;
+}
+
+.service-block:hover .service-link {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contacts {
+    padding: 20px 0 0;
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    color: #808080;
+    font-family: "open-sans", sans-serif;
+    width: 50%;
+}
+
+.contact-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-ctn1 {
+    width: 30%;
+}
+
+.send {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-inp {
+    width: 97%;
+    background-color: #2b2b2b;
+    padding: 8px 8px;
+    margin: 5px 0;
+    border: 1px solid white;
+    color: white;
+}
+
+.contact-inp:hover {
+    border-width: 2px;
+}
+
+.first-btn {
+    background-color: white;
+    letter-spacing: 0.1em;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 4px 10px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.first-btn:hover {
+    transition: .5s;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.link-icon {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 56px;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: #957B5F;
+    margin: 60px auto;
+    font-weight: 100;
+    line-height: 100px;
+}
+
+.rate {
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    right: 50px;
+}
+
+.rate-icon {
+    font-size: 30px;
+    color: white;
+    margin: 10px 0;
+    padding: 5px;
+    transition: .5s;
+}
+
+.rate-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: .5s;
+}
+
+.projects-left {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.projects-right {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.project {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-title {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: .5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.project-text {
+    font-size: 16px;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project img {
+    width: 100%;
+}
+
+.more-btn {
+    background-color: white;
+    letter-spacing: 0.1em;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+    border: 1px solid white;
+    margin: 10px 0;
+    padding: 4px 10px;
+    justify-content: center;
+    width: 15%;
+    display: none;
+}
+
+.more-btn:hover {
+    transition: .5s;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.project:hover .more-btn {
+    display: flex;
+    transition: .5s;
+}
+
+.form-log {
+    margin: 12% auto 25%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
+
+.log-title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.log-text {
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.log-link {
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: #957B5F;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.log-inp {
+    width: 39%;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 8px 5px;
+    margin: 40px 0 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.log-inp:hover,
+.log-inp:focus {
+    border-bottom: 1px solid #957B5F;
+}
+
+.log-btn {
+    margin-top: 40px;
+    background-color: #957B5F;
+    display: flex;
+    width: 40%;
+    border: none;
+    padding: 8px 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+@keyframes left-move {
+    0% {
+        margin-left: -500px;
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.main__title {
+    margin-top: 130px;
+    margin-bottom: 65px;
+    text-align: center;
+    color: #fff;
+    font-size: 56px;
+}
+
+.main__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.main__img1 {
+    margin-left: 70px;
+    position: absolute;
+    width: 706px;
+    height: 546px;
+    left: 250px;
+}
+
+.main__img2 {
+    position: absolute;
+    bottom: -110px;
+    right: 350px;
+    width: 282px;
+    height: 385px;
+}
+
+.main__about {
+    color: #d5d5d5;
+    font-weight: 400;
+}
+
+.main__textblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__subtitle {
+    position: absolute;
+    left: 120px;
+    font-size: 38px;
+}
+
+.main__text {
+    width: 40vw;
+}
+
+.main__paragraph {
+    font-size: 16px;
+    color: #d5d5d5;
+    line-height: 32px;
+}
+
+.main__content {
+    margin-top: 150px;
+}
+
+.main__form {
+    margin: 70px 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__form:hover {
+    background: #4d4d4d;
+    transition: all 2s;
+}
+
+.form {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__fio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__lastname {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__fname {
+    width: 85%;
+}
+
+.form__lname {
+    width: 100%;
+}
+
+.input {
+    margin: 20px 0 30px 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.input:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.input:focus {
+    border-bottom: 1px solid #957b5f;
+}
+
+.back {
+    top: 0;
+    width: 100%;
+    height: 420px;
+}
+
+.project-container {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.other-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    right: 50px;
+}
+
+.other-text {
+    font-size: 20px;
+    color: white;
+    margin: 0 25px;
+}
+
+.prj-title {
+    font-size: 38px;
+    letter-spacing: 10px;
+    line-height: .5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.prj-text {
+    font-size: 16px;
+    font-family: avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bright {
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+.select {
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    top: 109px;
+    right: 300px;
+    z-index: 999;
+}
+
+.log-out {
+    display: flex;
+    background-color: #4d4d4d;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    width: 100%;
+    padding: 5px 5px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.comment {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.special-title {
+    display: flex;
+    font-size: 40px;
+    color: white;
+}
+
+.error {
+    margin: 10px 0 0;
+    color: rgb(172, 27, 27);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body style="overflow: hidden;" onload="data()">
+    <div id="wrapper" class="wrapper" style="overflow: hidden;">
+        <a href="index.html" style="font-size: 35px;" class="fas fa-times close"></a>
+        <div class="form-log">
+            <h1 class="log-title">Log In</h1>
+            <div class="log-text">First time on the site? <a href="logup.html" class="log-link">Register</a></div>
+            <p class="error" id="error"></p>
+            <input id="log-in-email" type="email" class="log-inp" placeholder="Email" required>
+            <input id="log-in-password" type="password" class="log-inp" placeholder="Password" required>
+            <input type="button" value="Log in" class="log-btn" id="submit-log-in" onclick="logInAccount()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

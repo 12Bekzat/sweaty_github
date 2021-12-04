@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Site</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body onload="data()">
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="logo">My work</div>
+                <div class="navigation">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">About</a>
+                    <a href="works.html" class="link">Works</a>
+                </div>
+                <a class="authorize" onclick="visibleMenu()">
+                    <i class="fas fa-user-circle"></i>
+                    <div id="user" class="log-in">Log In</div>
+                </a>
+                <div id="select" class="select">
+                    <a href="login.html" class="log-out">Log In</a>
+                    <a href="logup.html" class="log-out">Sign In</a>
+                    <a href="login.html" class="log-out" onclick="logOut()">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="container-col">
+                <h1 class="main-title">Create works right now</h1>
+                <p class="main-text">Welcome to your assistant Charlotte</p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container-col">
+                <div style="width: 100%;">
+                    <a href="create.html" class="button">Create</a>
+                </div>
+
+                <div id="other-projects" class="info-container" style="width: 100%; align-items: center;">
+                    <div class="container-col" style="align-items: flex-start; width: 92%; margin-top: 30px;">
+                        <a class="authorize">
+                            <i class="fas fa-user-circle"></i>
+                            <div id="comment-user" class="log-in">Default</div>
+                        </a>
+                        <div id="project-title" class="special-title">dsada</div>
+                        <div id="project-type" class="prj-text">dsada</div>
+                        <input type="button" value="More" class="button" style="margin-top: 10px;">
+                        <div class="rate">
+                            <i class="fas fa-chevron-up rate-icon">
+                            </i>
+                            <div class="rate-text">150</div>
+                            <i class="fas fa-chevron-down rate-icon">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line" style="margin-top: 40px;"></div>
+
+                <div class="info-container">
+                    <div class="info-block">
+                        <img src="https://static.wixstatic.com/media/5c5fe7_5197d379f4b84637bf3fb07add0b2fff~mv2.jpg/v1/crop/x_122,y_50,w_424,h_269/fill/w_338,h_234,al_c,q_80,usm_0.66_1.00_0.01/paragraph.webp" alt="img" style="filter:brightness(0.4); width: 270px; height: 187px;">
+                        <div class="info">
+                            <p class="info-text">
+                                Create and write your letters and reports here, because we will keep it safe and confidental
+                            </p>
+                            <a href="" class="button">Use</a>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <img src="https://static.wixstatic.com/media/5c5fe7_a9887e8c3ad946c8bb0f17535c52d552~mv2.png/v1/crop/x_52,y_36,w_743,h_512/fill/w_338,h_234,al_c,q_85,usm_0.66_1.00_0.01/1_37nudw5YFzaQOo3RYcKrZA.webp" alt="img" style="filter:brightness(0.4); width: 270px; height: 187px;">
+                        <div class="info">
+                            <p class="info-text">
+                                Also, our program will replace github for you , since our program convenient view for downloading
+                            </p>
+                            <a href="" class="button">Use</a>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <img src="https://static.wixstatic.com/media/5c5fe7_defbbf72a8804b139d77946087e93996~mv2.jpg/v1/fill/w_338,h_234,al_c,q_80,usm_0.66_1.00_0.01/unnamed.webp" alt="img" style="filter:brightness(0.4); width: 270px; height: 187px;">
+                        <div class="info">
+                            <p class="info-text">
+                                The program also has its own compiler, which will be be able to compile your code at any time
+                            </p>
+                            <a href="" class="button">Use</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-container">
+                    <div class="service-block">
+                        <i class="far fa-file icon"></i>
+                        <p class="service-text">Text</p>
+                        <h1 class="service-title">Files</h1>
+                        <p class="extra-text">To create files, letters, articles</p>
+                        <a href="" class="service-link">View more</a>
+                    </div>
+
+                    <div class="service-block">
+                        <i class="fas fa-code icon"></i>
+                        <p class="service-text">Text</p>
+                        <h1 class="service-title">Files</h1>
+                        <p class="extra-text">To create files, letters, articles</p>
+                        <a href="" class="service-link">View more</a>
+                    </div>
+
+                    <div class="service-block">
+                        <i class="far fa-window-maximize icon"></i>
+                        <p class="service-text">Text</p>
+                        <h1 class="service-title">Files</h1>
+                        <p class="extra-text">To create files, letters, articles</p>
+                        <a href="" class="service-link">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container" style="justify-content: center;">
+                <div class="contacts">
+                    <p class="contact-text">Contacts:</p>
+                    <div class="contact-info">
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Phone: +7(777) 777 77-77</div>
+                            <div class="text-ctn1">Middle St.</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Email: toleutaib@gmail.com</div>
+                            <div class="text-ctn1">Almaty city</div>
+                        </div>
+                    </div>
+                    <div class="text-ctn">© 2021 Service company IT-CORP</div>
+                </div>
+                <div class="contacts">
+                    <div class="contact-text">Write:</div>
+                    <form action="" class="send">
+                        <div class="first">
+                            <input type="text" placeholder="Name" class="contact-inp">
+                            <input type="text" placeholder="Email" class="contact-inp">
+                        </div>
+                        <div class="first">
+                            <textarea class="contact-inp" cols="30" rows="4" placeholder="Message..."></textarea>
+                            <input type="submit" value="Send" class="first-btn">
+                        </div>
+                    </form>
+                    <div class="icons">
+                        <i class="link-icon fab fa-vk"></i>
+                        <i class="link-icon fab fa-facebook-f"></i>
+                        <i class="link-icon fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

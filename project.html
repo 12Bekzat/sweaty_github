@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Site</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body onload="data()">
+    <div id="wrapper" class="wrapper">
+        <div id="form-edit" class="bright">
+            <a href="" class="fas fa-times close"></a>
+            <div class="form-log" style="background-color: #2b2b2b; padding: 50px 0;">
+                <h1 class="log-title">Enter the text of Project</h1>
+                <textarea id="project-main-text" type="text" class="log-inp" style="width: 80%;" placeholder="Name of project"></textarea>
+                <input type="button" value="Save" class="log-btn" id="create-btn" onclick="saveProject()">
+            </div>
+        </div>
+
+        <div id="user-add-form" class="bright" style="display: none;">
+            <a href="" class="fas fa-times close"></a>
+            <div class="form-log" style="background-color: #2b2b2b; padding: 50px 50px;">
+                <h1 class="log-title">Choose the users for this project</h1>
+                <div id="choosen" class="users-container" style="display: flex; flex-direction: column;">
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <select id="choosenUser" class="select-user" style="margin: 0 20px 0 0;">
+                    </select>
+                    <i class="fas fa-plus add-user" onclick="addSelect()"></i>
+                </div>
+                <input type="button" value="Save" class="log-btn" id="create-btn" onclick="addUsers()">
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="container">
+                <div class="logo">My work</div>
+                <div class="navigation">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">About</a>
+                    <a href="works.html" class="link">Works</a>
+                </div>
+                <a class="authorize" onclick="visibleMenu()">
+                    <i class="fas fa-user-circle"></i>
+                    <div id="user" class="log-in">Log In</div>
+                </a>
+                <div id="select" style="display: none;" class="select">
+                    <a href="login.html" class="log-out">Log In</a>
+                    <a href="logup.html" class="log-out">Sign In</a>
+                    <a href="login.html" class="log-out" onclick="logOut()">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main" style="position: relative; flex-direction: column; align-items: center;">
+            <img src="https://static.wixstatic.com/media/a3c153_c3a1f52d22f34ebf807575c44a0b3c46~mv2.jpg/v1/crop/x_0,y_0,w_2686,h_1261/fill/w_673,h_315,al_c,q_80,usm_0.66_1.00_0.01/hasan-almasi-nKNm_75lH4g-unsplash%20Copy_j.webp" alt="" class="back" style="z-index: 0; position: absolute;">
+            <div id="project-info" class="project-container" style="min-height: 420px; z-index: 1; background-color: #2b2b2b; position: relative;">
+                <div class="other-info">
+                    <div id="like" class="other-text"><i class="fas fa-chevron-up other-text" style="margin-left: 10px;"></i>150</div>
+                    <div id="dislike" class="other-text"><i class="fas fa-chevron-down other-text" style="margin-left: 10px;"></i>150</div>
+                </div>
+                <h1 id="title" class="prj-title"></h1>
+                <p id="text" class="prj-text"></p>
+                <div id="main-text" class="prj-text"></div>
+                <div class="container" style="display: none; margin: 50px auto;" id="crud">
+                    <i id="add-user" style="display: none;" class="fas fa-user-plus add" onclick="addPanelUser()"></i>
+                    <input type="button" value="Edit" class="button" onclick="editProject()">
+                    <label id="lisPrivate" for="isPrivate" class="button">Private</label>
+                    <input type="checkbox" id="isPrivate" style="display: none;" onclick="changePrivate()">
+                    <input type="button" value="Delete" class="button" onclick="deleteProject()">
+                </div>
+            </div>
+
+            <h1 id="c-t" class="special-title" style="text-align: left;">Comments</h1>
+
+            <div id="c-f" class="project-container" style="align-items: center;">
+                <div class="container" style="width: 80%; display: flex; flex-direction: column; margin-bottom: 40px;">
+                    <textarea id="comment-text" class="log-inp" style="width: 100%; height: 80px; margin: 0 auto; background-color: #3b3b3b;" placeholder="Enter your comment"></textarea>
+                    <input type="button" value="Submit" class="button" style="border-radius: 0; width: 30%; margin: 0 0 0 auto;" onclick="addComment()">
+                </div>
+                <div id="comments" style="width: 100%; align-items: center;" class="container-col">
+                    <div class="comment">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="z-index: 1; margin-top: 50px;">
+            <div class="container" style="justify-content: center;">
+                <div class="contacts">
+                    <p class="contact-text">Contacts:</p>
+                    <div class="contact-info">
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Phone: +7(777) 777 77-77</div>
+                            <div class="text-ctn1">Middle St.</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Email: toleutaib@gmail.com</div>
+                            <div class="text-ctn1">Almaty city</div>
+                        </div>
+                    </div>
+                    <div class="text-ctn">© 2021 Service company IT-CORP</div>
+                </div>
+                <div class="contacts">
+                    <div class="contact-text">Write:</div>
+                    <form action="" class="send">
+                        <div class="first">
+                            <input type="text" placeholder="Name" class="contact-inp">
+                            <input type="text" placeholder="Email" class="contact-inp">
+                        </div>
+                        <div class="first">
+                            <textarea class="contact-inp" cols="30" rows="4" placeholder="Message..."></textarea>
+                            <input type="submit" value="Send" class="first-btn">
+                        </div>
+                    </form>
+                    <div class="icons">
+                        <i class="link-icon fab fa-vk"></i>
+                        <i class="link-icon fab fa-facebook-f"></i>
+                        <i class="link-icon fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

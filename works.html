@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body onload="data()">
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="logo">My work</div>
+                <div class="navigation">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">About</a>
+                    <a href="works.html" class="link" >Works</a>
+                </div>
+                <a class="authorize" onclick="visibleMenu()">
+                    <i class="fas fa-user-circle"></i>
+                    <div id="user" class="log-in">Log In</div>
+                </a>
+                <div id="select" class="select">
+                    <a href="login.html" class="log-out">Log In</a>
+                    <a href="logup.html" class="log-out">Sign In</a>
+                    <a href="login.html" class="log-out" onclick="logOut()">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main" style="margin-bottom: 165px;">
+            <div class="projects-left">
+                <h1 class="title">Your Projects</h1>
+                <a href="create.html" class="button" style="width: 20%; margin: 0; text-align: center;">Create</a>
+            </div>
+            <div id="projects" class="projects-right">
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container" style="justify-content: center;">
+                <div class="contacts">
+                    <p class="contact-text">Contacts:</p>
+                    <div class="contact-info">
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Phone: +7(777) 777 77-77</div>
+                            <div class="text-ctn1">Middle St.</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Email: toleutaib@gmail.com</div>
+                            <div class="text-ctn1">Almaty city</div>
+                        </div>
+                    </div>
+                    <div class="text-ctn">© 2021 Service company IT-CORP</div>
+                </div>
+                <div class="contacts">
+                    <div class="contact-text">Write:</div>
+                    <form action="" class="send">
+                        <div class="first">
+                            <input type="text" placeholder="Name" class="contact-inp">
+                            <input type="text" placeholder="Email" class="contact-inp">
+                        </div>
+                        <div class="first">
+                            <textarea class="contact-inp" cols="30" rows="4" placeholder="Message..."></textarea>
+                            <input type="submit" value="Send" class="first-btn">
+                        </div>
+                    </form>
+                    <div class="icons">
+                        <i class="link-icon fab fa-vk"></i>
+                        <i class="link-icon fab fa-facebook-f"></i>
+                        <i class="link-icon fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

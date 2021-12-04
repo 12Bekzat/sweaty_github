@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | My Site</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body onload="data()">
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="logo">My work</div>
+                <div class="navigation">
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">About</a>
+                    <a href="works.html" class="link">Works</a>
+                </div>
+                <a class="authorize" onclick="visibleMenu()">
+                    <i class="fas fa-user-circle"></i>
+                    <div id="user" class="log-in">Log In</div>
+                </a>
+                <div id="select" class="select">
+                    <a href="login.html" class="log-out">Log In</a>
+                    <a href="logup.html" class="log-out">Sign In</a>
+                    <a href="login.html" class="log-out" onclick="logOut()">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__about">
+            <div class="main__top">
+                <h1 class="main__title">About</h1>
+
+                <div class="main__img">
+                    <img class="main__img1" src="https://static.wixstatic.com/media/a3c153_20122b9a32cc4e9a9faca835b9f82d14~mv2.jpg/v1/fill/w_883,h_558,al_c,q_85,usm_0.66_1.00_0.01/yiranding-yOWUAKYk46Y-unsplash%252520copy_.webp" alt=":(">
+                    <img class="main__img2" src="https://static.wixstatic.com/media/a3c153_bbf1019446e34069a3b96c18f172e810~mv2.jpg/v1/crop/x_2600,y_0,w_3460,h_4724/fill/w_353,h_481,al_c,q_80,usm_0.66_1.00_0.01/878b419ef45e419bba087a2479c58e8a.webp" alt=":(">
+                </div>
+            </div>
+            <div class="main__content">
+                <div class="main__textblock">
+                    <h2 class="main__subtitle">Our<br>Story</h2>
+                    <div class="main__text">
+                        <p class="main__paragraph">This is your About page. This space is a great opportunity to give a full background on who you are, what you do, and what your site has to offer. Your users are genuinely interested in learning more about you, so don’t be afraid
+                            to share personal anecdotes to create a more friendly quality.</p>
+                        <p class="main__paragraph">Every website has a story, and your visitors want to hear yours. This space is a great opportunity to provide any personal details you want to share with your followers. Include interesting anecdotes and facts to keep readers engaged.</p>
+                        <p class="main__paragraph">Double click on the text box to start editing your content and make sure to add all the relevant details you want site visitors to know. If you’re a business, talk about how you started and share your professional journey. Explain
+                            your core values, your commitment to customers and how you stand out from the crowd. Add a photo, gallery or video for even more engagement.</p>
+                    </div>
+
+                </div>
+                <div class="main__form">
+                    <h2 class="main__form-title">
+                        Let's Work<br>Together
+                    </h2>
+                    <div class="main__form-contact">
+                        440 Media Center Middle St<br><br> Kazakhstan Almaty City<br><br> E-Mail: toleutaib@gmail.com<br><br> Tel: +7(777) 777 77-77<br><br>
+                    </div>
+                    <form class="form">
+                        <div class="form__fio">
+                            <div class="form__name">
+                                <label for="name">First Name</label>
+                                <input class="form__fname input" id="name" type="text">
+                            </div>
+                            <div class="form__lastname">
+                                <label for="name">Last Name</label>
+                                <input class="form__lname input" id="name" type="text">
+                            </div>
+                        </div>
+                        <label for="name">Email*</label>
+                        <input class="form__email input" id="name" type="text">
+                        <label for="name">Message</label>
+                        <textarea class="form__mes input" rows='5' id="name"></textarea>
+                        <button class="first-btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container" style="justify-content: center;">
+                <div class="contacts">
+                    <p class="contact-text">Contacts:</p>
+                    <div class="contact-info">
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Phone: +7(777) 777 77-77</div>
+                            <div class="text-ctn1">Middle St.</div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; width: 70%;">
+                            <div class="text-ctn">Email: toleutaib@gmail.com</div>
+                            <div class="text-ctn1">Almaty city</div>
+                        </div>
+                    </div>
+                    <div class="text-ctn">© 2021 Service company IT-CORP</div>
+                </div>
+                <div class="contacts">
+                    <div class="contact-text">Write:</div>
+                    <form action="" class="send">
+                        <div class="first">
+                            <input type="text" placeholder="Name" class="contact-inp">
+                            <input type="text" placeholder="Email" class="contact-inp">
+                        </div>
+                        <div class="first">
+                            <textarea class="contact-inp" cols="30" rows="4" placeholder="Message..."></textarea>
+                            <input type="submit" value="Send" class="first-btn">
+                        </div>
+                    </form>
+                    <div class="icons">
+                        <i class="link-icon fab fa-vk"></i>
+                        <i class="link-icon fab fa-facebook-f"></i>
+                        <i class="link-icon fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

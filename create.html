@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <script src="https://kit.fontawesome.com/67f1b492e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body style="overflow: hidden;" onload="data()">
+    <div id="wrapper" class="wrapper" style="overflow: hidden;">
+        <div class="form-log">
+            <h1 class="log-title">Create Project</h1>
+            <input id="create-name" type="text" class="log-inp" placeholder="Name of project" maxlength="20" required>
+            <input id="create-type" type="text" class="log-inp" placeholder="Type of project" maxlength="20" required>
+            <input type="button" value="Create" class="log-btn" id="create-btn" onclick="addProject()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
